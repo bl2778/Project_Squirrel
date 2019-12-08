@@ -5,7 +5,6 @@ from django.shortcuts import redirect
 from .models import Squirrel
 from .forms import SquirrelForm
 
-<<<<<<< HEAD
 
 def index(request):
     return render(request, 'sightings/index.html', {})
