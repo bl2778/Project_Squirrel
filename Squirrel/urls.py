@@ -20,7 +20,6 @@ from django.urls import include, path
 from sightings import views
 
 urlpatterns = [
-   # path('', include('sightings.urls')),
     path('',views.index,name='index'),
     path('map',views.map,name='map'),
     path('sightings/', include('sightings.urls')),
