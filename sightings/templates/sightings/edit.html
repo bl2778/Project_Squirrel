@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title>Edit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<form method="post" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+<h2 class="w3-center">Squirrel Information Update</h2>
+    {% csrf_token %}
+    {{ form.as_p}}
+    <p class="w3-center">
+    <input class="w3-button w3-section w3-blue w3-ripple" type="submit" name="Update" value="Update">
+    <br>
+    </p>
+</form>
+</body>
+</html>
