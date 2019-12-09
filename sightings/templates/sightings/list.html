@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title>Squirrel List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Squirrel List</h2>
+    <a href="../sightings/add/" class="w3-button w3-section w3-blue w3-ripple" >Add a New Squirrel</a>
+  <p>Here is a full list of all the squirrels:</p>
+  {% for squirrel in squirrels %}
+  <ul class="w3-ul w3-card-4">
+    <li class="w3-bar">
+      <a href="../sightings/{{squirrel.Unique_squirrel_id}}/" class="w3-bar-item w3-button w3-edit w3-xsmall w3-right">Edit</a>
+      <img src="https://cdn0.iconfinder.com/data/icons/mammals-3/50/Animals_Colored-44-512.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">{{squirrel.Unique_squirrel_id}}</span><br>
+        <span>Location: {{squirrel.Location}}</span>
+      </div>
+    </li>
+  {% endfor %}
+
+  </ul>
+</div>
+
+</body>
+</html>
