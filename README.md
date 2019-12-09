@@ -8,26 +8,26 @@ This is the final project for tools for analytics. This app can be used to track
 
 1. Homepage
 
-URL: http://127.0.0.1:8000/
+URL: http://project-squirrel-261516.appspot.com/
 
 In the homepage of the app, we can see a extremely cute squirrel photo coupled with entries to 3 functional pages. By cliking those bottons, we can get into those functional pages.
 
 2. Squirrel Map
 
-URL: http://127.0.0.1:8000/map
+URL: http://project-squirrel-261516.appspot.com/map
 
 In this page, the location of every squirrel will appear in a map. All the points in this page are based on the latitude and longitude given in the Central Park Squirrel Census data.
 
 3. Squirrel List
 
-URL: http://127.0.0.1:8000/sightings/
+URL: http://project-squirrel-261516.appspot.com/sightings/
 
 In this page, we can view all the information of every squirrel spotted in the Central Park. Besides, we can also edit any information of any squirrel by clicking the "Edit" botton and we can add new squirrel data by clicking the "Add a New Squirrel" button
 
-New Squirrel Adding page: http://127.0.0.1:8000/sightings/add/
+New Squirrel Adding page: http://project-squirrel-261516.appspot.com/sightings/add/
     
 4. Squirrel Stats
 
-URL: http://127.0.0.1:8000/sightings/stats/
+URL: http://project-squirrel-261516.appspot.com/sightings/stats/
 
 In this page, we can view some statistics characteristics of the squirrel population in the Central Park including total number of squirrels viewed, total number of squirrels viewed in the morning, total number of squirrels viewed in the afternoon and night, total number of squirrels viewed are adults,total number of squirrels viewed are junivile.
