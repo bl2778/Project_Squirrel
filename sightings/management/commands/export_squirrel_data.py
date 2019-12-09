@@ -4,8 +4,10 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
+    
     def add_arguments(self, parser):
         parser.add_argument('SquirrelData.csv')
+    
     def handle(self, *args, **options):
         fields_list = [x.name for x in Squirrel._meta.fields]
         with open(options['SquirrelData.csv'],'w') as fp:
@@ -34,6 +36,7 @@ class Command(BaseCommand):
                     'Runs_from',
                     ]
             writer.writerow(row)
+            
             for row in Squirrel.objects.all():
                 row1 = [getattr(row, field) for field in fields_list]
                 writer.writerow(row1)
